@@ -23,8 +23,9 @@ var sign_options_schema = {
   keyid: { isValid: isString, message: '"keyid" must be a string' }
 };
 
+// ALlow IAT strings for compatibility with vendor
 var registered_claims_schema = {
-  iat: { isValid: isNumber, message: '"iat" should be a number of seconds' },
+//  iat: { isValid: isNumber, message: '"iat" should be a number of seconds' },
   exp: { isValid: isNumber, message: '"exp" should be a number of seconds' },
   nbf: { isValid: isNumber, message: '"nbf" should be a number of seconds' }
 };
